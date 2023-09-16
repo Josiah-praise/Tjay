@@ -1,5 +1,6 @@
 /* css reseet*/
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Playfair+Display:ital@1&family=Roboto&family=Varela+Round&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Varela+Round&display=swap');
+
 
 *{ 
     margin: 0;
@@ -120,7 +121,7 @@ html{
 }
 
 .product__p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 1.4rem;
 }
 
@@ -140,6 +141,11 @@ hr {
 
 .product__article{
     display: flex;
+    gap: 10px;
+}
+
+.big__space {
+    margin-bottom: 60px;
 }
 
 .article__figure {
@@ -215,7 +221,8 @@ hr {
     background-color: hwb(0 100% 0% / 0.979);
     padding-top: .5rem;
     padding-bottom: .5rem;
-
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 .connect-with-us {
     display: flex;
@@ -249,6 +256,10 @@ hr {
     font-weight: bolder;
 }
 
+#contact > div {
+    margin: 10px 0;
+}
+
 /* Footer */
 footer {
     background: hwb(0 100% 0% / 0.979);
@@ -257,7 +268,7 @@ footer {
     background: hwb(0 100% 0% / 0.979);
     text-align: center;
     padding: 1rem 2rem;
-    font-weight: bold;
+    word-spacing: 3px;
 }
 .footer a{
     text-decoration: none;
@@ -272,6 +283,7 @@ footer {
     color: rgb(0, 0, 0);
     font-weight: bold;
     background-color: #ffffff;
+    margin: 60px 0;
 }
 .f1 img{
     background: rgba(0, 0, 0, 0);
@@ -343,6 +355,9 @@ footer {
     .fig__img {
         width: 100% !important;
     }
+    .contact {
+        letter-spacing: unset;
+    }
 } 
 
 @media (max-width: 820px) {
@@ -356,6 +371,12 @@ footer {
        display: block;
        margin-left: auto;
        margin-right: auto;
+    }
+    footer .f1 {
+        overflow-y: auto;
+    }
+    footer .f1:hover {
+        cursor: pointer;
     }
 }
 
